@@ -1,0 +1,28 @@
+{
+  "name": "cavintek_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswin-ashokan/dashboard_task.git"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "AswinMA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswin-ashokan/dashboard_task/issues"
+  },
+  "homepage": "https://github.com/aswin-ashokan/dashboard_task#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "chart.js": "^4.4.3",
+    "jquery": "^3.7.1"
+  }
+}
