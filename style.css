@@ -1,0 +1,17 @@
+/* header styles */
+.header__userImg{
+    border-radius: 50%;
+}
+.header .bi{
+font-size: 20px;
+}
+#header__searchBtn{
+    color: #818083 ;
+}
+.header__notiBadge{
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.header__statusBadge{
+    margin-left: -6px;
+}
