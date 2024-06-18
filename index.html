@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Aswin M A">
-    <meta name="description" content="Dashboard">
-    <meta property="og:title" content="Business Dashboard">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
-    <meta property="og:image" content="image path that show when link is shared">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aswin M A" />
+    <meta name="description" content="Dashboard" />
+    <meta property="og:title" content="Business Dashboard" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta
+      property="og:image"
+      content="image path that show when link is shared"
+    />
     <title>Dashboard</title>
     <!-- linked css resources - bootstrapCSS, bootstrapIcons externalCSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container bg-body-tertiary">
+    <!-- header bar-->
+    <header class="header">
+        <nav class="navbar bg-white shadow mt-lg-3 rounded p-1">
+            <div class="container-fluid d-flex">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-search" id="header__searchBtn"></i>
+                    <form class="header__search" role="search">
+                      <input class="form-control border-0 fo" type="search" placeholder="Search (ctrl+/)" aria-label="Search">
+                    </form>
+                </div>
+                <div class="d-flex">
+                    <button class="btn"><i class="bi bi-translate"></i></button>
+                    <button class="btn"><i class="bi bi-brightness-high"></i></button>
+                    <button class="btn"><img src="/assets/svg_icon/grid.svg" alt=""></button>
+                    <!-- <button class="btn"><i class="bi bi-bell"></i></button> -->
+                    <button type="button" class="btn position-relative">
+                        <i class="bi bi-bell"></i>
+                        <span class="header__notiBadge position-absolute top-0 translate-middle badge rounded-pill bg-danger">5<span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                    <div class="">
+                        <button type="button" class="btn position-relative">
+                            <img src="/assets/user.jpg" alt="user profile" width="38" height="38" class="header__userImg">
+                            <span class="header__statusBadge position-absolute bottom-0 end-45 translate-middle p-1 bg-success border border-light rounded-circle">
+                              <span class="visually-hidden">New alerts</span>
+                            </span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    
     <!-- linked javascript resources - jquery, bootstrapJS, chartJS, externalJS. -->
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
